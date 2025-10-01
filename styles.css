@@ -16,6 +16,11 @@
   input, textarea, button {
     font-size: 0.95rem;
   }
+  .gallery {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: visible;
+  }
 }
 
 
@@ -77,7 +82,7 @@ header h1 {
 
 /* Gallery */
 .gallery {
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   max-width: 1000px;
