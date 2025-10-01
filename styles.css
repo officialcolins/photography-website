@@ -59,18 +59,22 @@ header h1 {
 }
 
 /* Favorites */
-.favorites-list {
+.animals-list {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
   list-style: none;
   max-width: 600px;
   margin: 2rem auto;
   padding: 0 1rem;
+  width: 100%;
 }
 
-.favorites-list li {
+.animals-list li {
   margin: 0.5rem 0;
 }
 
-.favorites-list a {
+.animals-list a {
   color: #f1f5f9;
   text-decoration: none;
   transition: color 0.3s ease;
