@@ -84,6 +84,7 @@ header h1 {
   color: #f1f5f9;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: larger;
 }
 
 .favorites-list a:hover {
