@@ -10,16 +10,19 @@
   }
 
   ul {
-    grid-template-columns: 1fr; /* Stack images vertically */
+    grid-template-columns: 1fr;
+    /* Stack images vertically */
   }
 
-  input, textarea, button {
+  input,
+  textarea,
+  button {
     font-size: 0.95rem;
   }
+
   .gallery {
-    grid-auto-flow: row;
-    grid-template-columns: repeat(2, 1fr);
-    overflow-x: visible;
+    grid-template-columns: 1fr;
+    padding:0 0.5rem;
   }
 }
 
@@ -93,13 +96,35 @@ header h1 {
 
 /* Gallery */
 .gallery {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
+.gallery img {
+  width: 100%;
+  height: auto;         /* maintain aspect ratio */
+  display: block;
+  border-radius: 8px;   /* optional: smooth corners */
+}
+
+.animal {
+  background: #0f172a;       /* or any container background */
+  color: #cbd5e1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: justify;       /* optional: align text nicely */
+}
+
+.animal p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
 
 figure {
   margin: 0;
@@ -137,7 +162,7 @@ figcaption {
 }
 
 .bio p {
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
   color: #cbd5e1;
 }
@@ -177,7 +202,8 @@ label {
   margin-top: 0.5rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.6rem;
   border: none;
