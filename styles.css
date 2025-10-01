@@ -58,7 +58,13 @@ header h1 {
   color: #cbd5e1;
 }
 
-/* Favorites */
+/* Animals list */
+.top {
+  text-align: center;
+  margin-top: 1rem;
+  color: #38bdf8;
+}
+
 .animals-list {
   justify-content: space-between;
   align-items: center;
